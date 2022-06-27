@@ -1,0 +1,84 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c50df523-62aa-46c0-8e41-c706f1b56887</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>skyscrapers.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>skyscrapers</Name>
+    <RootNamespace>skyscrapers</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Box.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cell.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="COLORS.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clue.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameBoard.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InGame.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Keyboard.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mouse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Button.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="skyscrapers.py" />
+    <Compile Include="ScrSwitcher.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Timer.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="solution.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
